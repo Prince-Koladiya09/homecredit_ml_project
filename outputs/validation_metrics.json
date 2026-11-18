@@ -1,0 +1,9 @@
+{
+  "model": "extra_trees",
+  "seed": 42,
+  "validation_fraction": 0.2,
+  "validation_rows": 34241,
+  "roc_auc": 0.7339206441457012,
+  "average_precision": 0.21138370949995847,
+  "brier_score": 0.19108112366569519
+}
