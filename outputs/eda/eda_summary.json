@@ -1,0 +1,31 @@
+{
+  "train_shape": [
+    171202,
+    34
+  ],
+  "test_shape": [
+    61500,
+    33
+  ],
+  "target_counts": {
+    "0": 157381,
+    "1": 13821
+  },
+  "positive_rate": 0.08072919708881905,
+  "numeric_predictors": 24,
+  "categorical_predictors": 8,
+  "categorical_cardinality": {
+    "NAME_CONTRACT_TYPE": 2,
+    "CODE_GENDER": 3,
+    "NAME_INCOME_TYPE": 8,
+    "NAME_EDUCATION_TYPE": 5,
+    "NAME_FAMILY_STATUS": 6,
+    "NAME_HOUSING_TYPE": 6,
+    "OCCUPATION_TYPE": 19,
+    "ORGANIZATION_TYPE": 58
+  },
+  "id_unique_train": true,
+  "id_unique_test": true,
+  "id_overlap": 0,
+  "test_ids_match_sample_order": true
+}
