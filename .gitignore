@@ -1,0 +1,18 @@
+@"
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+.ipynb_checkpoints/
+.DS_Store
+Thumbs.db
+"@ | Out-File -Encoding utf8 .gitignore
+# Large trained model files
+models/*.joblib
+
+# Large model files
+models/*.joblib
+*.joblib
