@@ -1,0 +1,8 @@
+{
+  "model": "lightgbm",
+  "signature": "e641ab7354f13da2f961f17a413b52fb4cfbee9c68f54b473e6fe9f8762d0fc3",
+  "saved_at": "2026-11-19 10:51:49",
+  "oof_rows": 171202,
+  "test_rows": 61500,
+  "completed": true
+}

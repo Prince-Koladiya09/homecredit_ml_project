@@ -1,0 +1,6 @@
+{
+  "catboost_d6_with_sentinel_auc": 0.7608560891346358,
+  "catboost_d6_without_sentinel_auc": 0.7609198485001122,
+  "difference_with_minus_without": -6.375936547642347e-05,
+  "interpretation": "Positive difference means the sentinel feature improved this OOF result; negative means it reduced it. This is a single-seed comparison, not proof of causality."
+}

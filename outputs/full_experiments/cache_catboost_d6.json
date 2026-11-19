@@ -1,0 +1,8 @@
+{
+  "model": "catboost_d6",
+  "signature": "7107dda3eeb91855783e965b35bc69de96b558c5562db7a3a2e635990e3b1f89",
+  "saved_at": "2026-11-19 10:32:23",
+  "oof_rows": 171202,
+  "test_rows": 61500,
+  "completed": true
+}

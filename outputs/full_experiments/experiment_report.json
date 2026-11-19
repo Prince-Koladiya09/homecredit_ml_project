@@ -1,0 +1,72 @@
+{
+  "seed": 42,
+  "folds": 5,
+  "train_rows": 171202,
+  "test_rows": 61500,
+  "features": 77,
+  "one_hot_features": 176,
+  "models": {
+    "catboost_d6": {
+      "oof_auc": 0.7608560891346358,
+      "best_iterations": []
+    },
+    "catboost_d7": {
+      "oof_auc": 0.7605829178576505,
+      "best_iterations": []
+    },
+    "catboost_d6_no_sentinel": {
+      "oof_auc": 0.7609198485001122,
+      "best_iterations": [
+        1515,
+        1280,
+        1462,
+        1409,
+        1581
+      ]
+    },
+    "lightgbm": {
+      "oof_auc": 0.7594945565639986,
+      "best_iterations": [
+        688,
+        608,
+        761,
+        482,
+        530
+      ]
+    },
+    "xgboost": {
+      "oof_auc": 0.7592738310165684,
+      "best_iterations": [
+        654,
+        744,
+        781,
+        612,
+        976
+      ]
+    }
+  },
+  "sentinel_ablation": {
+    "catboost_d6_with_sentinel_auc": 0.7608560891346358,
+    "catboost_d6_without_sentinel_auc": 0.7609198485001122,
+    "difference_with_minus_without": -6.375936547642347e-05,
+    "interpretation": "Positive difference means the sentinel feature improved this OOF result; negative means it reduced it. This is a single-seed comparison, not proof of causality."
+  },
+  "blend": {
+    "models": [
+      "catboost_d6",
+      "catboost_d7",
+      "lightgbm",
+      "xgboost"
+    ],
+    "weights": {
+      "catboost_d6": 0.3,
+      "catboost_d7": 0.3,
+      "lightgbm": 0.4,
+      "xgboost": 0.0
+    },
+    "oof_selection_auc": 0.7621101440029637,
+    "warning": "Blend weights were optimized on these OOF predictions. The resulting blend score is a model-selection score and may be optimistic."
+  },
+  "runtime_seconds": 1598.9,
+  "submission": "outputs\\submission_v2_1.csv"
+}

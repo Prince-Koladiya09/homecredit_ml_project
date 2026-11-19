@@ -1,0 +1,8 @@
+{
+  "model": "xgboost",
+  "signature": "caf3b5ddd9cb942ba5aec0aae7982c553a578e4f23dc10e8b61a762ec280b0fa",
+  "saved_at": "2026-11-19 10:58:25",
+  "oof_rows": 171202,
+  "test_rows": 61500,
+  "completed": true
+}
